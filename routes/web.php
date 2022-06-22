@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::get('/resume/download','ResumeController@download')->name('resume.download');
 Route::get('/resume', 'ResumeController@index')->name('resume.index');
+Route::get('/resume-ref', 'ResumeController@resume')->name('resume.ref');
 
 Auth::routes();
 

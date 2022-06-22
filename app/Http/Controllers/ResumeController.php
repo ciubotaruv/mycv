@@ -18,6 +18,12 @@ class ResumeController extends Controller
         return view('resume', compact('user'));
     }
 
+    public function resume()
+    {
+        $user = auth()->user();
+        return view('resume-ref', compact('user'));
+    }
+
     public function download()
     {
         $user = auth()->user();

@@ -52,6 +52,7 @@ class UserDetailController extends Controller
         $detail->phone = $request->input('phone');
         $detail->email = $request->input('email');
         $detail->address = $request->input('address');
+        $detail->summary = $request->input('summary') ?? 'no';
         $detail->user_id = auth()->id();
         $detail->save();
 

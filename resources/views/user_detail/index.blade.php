@@ -2,12 +2,12 @@
 
 @section('content')
 
-<h2>USer Detail</h2>
+<h2>User Detail</h2>
 
-
+@if($details)
 <div class="card">
     <div class="card-body">
-    <h4 class="card-title"> {{$details->fullname}}  {{$details->email}}  {{$details->phone}}</h4>
+    <h4 class="card-title"> {{$details->fullname ?? ''}}  {{$details->email ?? ''}}  {{$details->phone ?? ''}}</h4>
 
 
         <a class="btn btn-sm btn-primary" href=" {{route('user-detail.edit', $details)}} " role="button">Edit</a>
@@ -20,6 +20,10 @@
         </form>
 
     </div>
+</div>
+@endif
+<div class="mt-2">
+    <a href=" {{route('user-detail.create')}} ">+ Add detail</a>
 </div>
 
 <div class="text-right mt-3">

@@ -77,10 +77,21 @@
                             </div>
                         </div>
                     </li>
-                    <a target="_blank" href=" {{route('resume.index')}} ">
+                    <a target="_blank" href=" {{route('resume.index')}} " style="
+    padding-right: 10px;
+">
                         <button type="button" class="btn btn-primary">
                             <div class="nav-item">
                                 View
+                            </div>
+                        </button>
+
+                    </a>
+
+                    <a target="_blank" href=" {{route('resume.ref')}} ">
+                        <button type="button" class="btn btn-primary">
+                            <div class="nav-item">
+                                Build CV
                             </div>
                         </button>
 

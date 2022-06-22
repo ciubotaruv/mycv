@@ -28,13 +28,11 @@
     </div>
 </div>
 
+
+@endforeach
 <div class="mt-2">
     <a href=" {{route('experience.create')}} ">+ Add Experience</a>
 </div>
-
-
-@endforeach
-
 <div class="text-right">
     <a class=" btn btn-primary" href=" {{route('skill.index')}} " role="button">Next</a>
 </div>
